@@ -14,7 +14,7 @@ jobs:
           target: [x86_64-unknown-linux-musl]
       steps:
         - name: Install deps
-          run: sudo apt-get install libusb
+          run: sudo apt-get install libusb-dev
         - uses: actions/checkout@master
         - name: Compile and release
           uses: rust-build/rust-build.action@v1.4.5
